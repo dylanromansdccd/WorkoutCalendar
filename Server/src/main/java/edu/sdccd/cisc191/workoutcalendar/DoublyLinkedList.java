@@ -125,8 +125,8 @@ public class DoublyLinkedList<T> {
     }
 
     /**
-     * Caleld by user callable "remove" method with data parameter,
-     * recursively itereates through list and deletes node containing given data
+     * Called by user callable "remove" method with data parameter,
+     * recursively iterates through list and deletes node containing given data
      * @param data
      * @param node
      */

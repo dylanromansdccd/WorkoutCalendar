@@ -92,7 +92,7 @@ public class Month {
 
     /**
      * fills an array with every day's day of the month value
-     * @return array wtih ever day_of_month value
+     * @return array with ever day_of_month value
      */
     public Day[][] getDays() {
         Day[][] days = new Day[5][7];
@@ -110,9 +110,9 @@ public class Month {
     }
 
     /**
-     * user callable method of indexOf, calls a recrsive method with specified values
+     * user callable method of indexOf, calls a recursive method with specified values
      * @param day
-     * @return
+     * @return Map with column and row
      */
     public Map<String, Integer> indexOf(int day) {
         Map<String, Integer> pairs = new HashMap<String, Integer>();
@@ -127,7 +127,8 @@ public class Month {
     }
 
     /**
-     *
+     * method uncallable to user, called by previous indexOf method
+     * recursively searches for desired day through binary search algorithm
      * @param day
      * @param high
      * @param low

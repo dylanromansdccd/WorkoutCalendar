@@ -152,14 +152,6 @@ public class WorkoutCalendarApplication extends Application {
         for(int i = 0; i < cardio.length; i++) {
             cardioService.save(cardio[i]);
         }
-
-        for(Lift lift : liftService.findAll()) {
-            System.out.println(lift.toString());
-        }
-    }
-
-    public Server inMemoryDBServer() throws SQLException {
-        return Server.createTcpServer("-tcp", "-tcpAllowOthers", "-tcpPort", "9092", "-ifNotExists");
     }
 
     public VBox fillCalendar() {
