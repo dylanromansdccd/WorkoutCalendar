@@ -3,8 +3,6 @@ package edu.sdccd.cisc191.workoutcalendar;
 
 import com.google.gson.Gson;
 
-import java.io.IOException;
-
 public class SaveToFile {
 
     public String dayToJson(Day day) {

@@ -149,6 +149,11 @@ public class Month {
         return number_of_days;
     }
 
+    /**
+     * adds lifts to specific day in month
+     * @param pairs
+     * @param lift
+     */
     public void addLift(Map<String, Integer>pairs, Lift lift) {
         month[pairs.get("row")][pairs.get("col")].addLift(lift);
     }

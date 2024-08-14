@@ -26,6 +26,9 @@ public class DayCalendar extends BorderPane {
         border_color = "-fx-border-color: blue";
     }
 
+    /**
+     * Sets the day of the month in every days' display
+     */
     public void updateDate() {
         CalendarLabel date = new CalendarLabel();
         date.setPrefHeight(25);
@@ -41,6 +44,9 @@ public class DayCalendar extends BorderPane {
         setTop(date);
     }
 
+    /**
+     * Adds cardio to every days' BorderPane center
+     */
     public void updateCardio() {
         cardio_display = new VBox();
 
@@ -79,6 +85,9 @@ public class DayCalendar extends BorderPane {
         setLeft(cardio_display);
     }
 
+    /**
+     * Adds lifts to every days' BorderPane center
+     */
     public void updateLifts() {
         lifts_display = new VBox();
             if(day != null) {
@@ -131,6 +140,9 @@ public class DayCalendar extends BorderPane {
             }
     }
 
+    /**
+     * Calls all updates and updates everything in days' display
+     */
     public void updateDay() {
         updateDate();
         updateCardio();

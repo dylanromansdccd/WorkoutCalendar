@@ -157,13 +157,4 @@ public class DoublyLinkedList<T> {
 
         return node.data;
     }
-
-
-    public void iterateForward() {
-        Node temp = head;
-        while(temp != null) {
-            System.out.println(temp.data);
-            temp = temp.next;
-        }
-    }
 }
